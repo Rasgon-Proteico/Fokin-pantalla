@@ -94,7 +94,7 @@ try:
         # Mover a 180 grados
         angulo_actual = 180
         print(f"Moviendo a {angulo_actual} grados...")
-        actualizar_pantalla("Servo:", f"Pos: {angulo_actual} grados")
+        actualizar_pantalla("Servo  :)", f"Pos: {angulo_actual} grados")
         mover_servo(angulo_actual)
         time.sleep(2)
         
@@ -109,8 +109,11 @@ try:
 except KeyboardInterrupt:
     print("\nPrograma detenido por el usuario.")
     
+    
     # Mensaje de apagado en la pantalla
-    actualizar_pantalla("Deteniendo...", "Liberando servo")
+    actualizar_pantalla("Deteniendo...", " Vuelve pronto tonot@")
+    time.sleep(1)
+    actualizar_pantalla("Vuelve pronto tonot@", "eeee ")
     time.sleep(1)
 
     # Colocamos el servo en el centro antes de apagarlo
@@ -125,4 +128,6 @@ except KeyboardInterrupt:
     display.show()
     # display.poweroff() # Algunas librerías tienen esta función para apagarla por completo
 
-    print("Recursos liberados. Programa finalizado.")
+    print("Recursos liberados. Programa finalizado.\n")
+    print()
+   
